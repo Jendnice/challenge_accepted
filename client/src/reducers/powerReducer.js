@@ -14,7 +14,22 @@ const powerReducer = (state = { powers: [], challenges: [] }, action) => {
                 // add powers
                 return {
                     ...state,
-                    powers: action.payload,
+                    powers: action.payload
+                }
+
+            
+            case 'LOADING_CHALLENGES':
+                // loading challenges
+                return {
+                    ...state,
+                    challenges: [...state.challenges],
+                }  
+            
+            case 'ADD_CHALLENGES':
+                // add challenges
+                return {
+                    ...state,
+                    challenges: action.payload
                 } 
 
 

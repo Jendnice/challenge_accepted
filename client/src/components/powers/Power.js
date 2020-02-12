@@ -5,15 +5,15 @@ class Power extends Component {
 
 
   render() {
-    const { power } = this.props
+    // const { power } = this.props
 
     return (
       <div>
         <li>
-          {power.name} <br />
-          {power.description} <br />
-          {power.info} <br />
-          <ChallengesContainer power={power}/>
+          {this.props.power.name} <br />
+          {this.props.power.description} <br />
+          {this.props.power.info} <br />
+          <ChallengesContainer powerId={this.props.power.id}/>
         </li>
       </div>
     )

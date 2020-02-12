@@ -1,12 +1,3 @@
-// export function fetchCats() {
-//     return (dispatch) => {
-//         dispatch({type: 'LOADING_CATS'})
-//         fetch('https://learn-co-curriculum.github.io/cat-api/cats.json')
-//         .then(response => response.json())
-//         .then(cats => dispatch({type: 'ADD_CATS', cats: cats.images}))    
-//     }
-// }
-
 
 export const fetchPowers = () => {
 
@@ -16,6 +7,19 @@ export const fetchPowers = () => {
         .then(resp => resp.json())
         .then(powers => {
         dispatch({type: "ADD_POWERS", payload: powers})
+      })
+    }
+}
+
+
+export const fetchChallenges = () => {
+
+    return (dispatch) => {
+        dispatch({type: 'LOADING_CHALLENGES'})
+        return fetch('http://localhost:3000/challenges')
+        .then(resp => resp.json())
+        .then(challenges => {
+        dispatch({type: "ADD_CHALLENGES", payload: challenges})
       })
     }
 }
