@@ -3,7 +3,7 @@ import Power from './Power'
 
 class Powers extends Component {
 
-  renderPowers = () => {
+  renderPowers = () => { 
     return this.props.powers.map(power => {
       return (
       <Power

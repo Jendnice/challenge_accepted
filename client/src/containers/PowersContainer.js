@@ -1,8 +1,13 @@
 import React, { Component } from 'react'
 import Powers from '../components/powers/Powers'
 import { connect } from 'react-redux'
+import { fetchPowers } from '../actions/index'
 
 class PowersContainer extends Component {
+
+  componentDidMount() {
+    this.props.fetchPowers()
+  }
 
   render() {
     return (
@@ -15,9 +20,16 @@ class PowersContainer extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    powers: state.powers 
+    powers: state.powers,
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchPowers: () => dispatch(fetchPowers())
   }
 }
 
 
-export default connect(mapStateToProps)(PowersContainer)
+
+export default connect(mapStateToProps, mapDispatchToProps)(PowersContainer)

@@ -1,8 +1,15 @@
 import React, { Component } from 'react'
 import Challenges from '../components/challenges/Challenges'
 import { connect } from 'react-redux'
+// import { fetchPowers } from '../actions/index'
+
 
 class ChallengesContainer extends Component {
+
+  // componentDidMount() {
+  //   // console.log(this.props)
+  //   this.props.fetchPowers()
+  // }
 
   render() {
     return (
