@@ -10,7 +10,7 @@ class Challenge extends Component {
         <li>
           {challenge.name} <br />
           {challenge.description} <br />
-          {challenge.completed} <br />
+          Completed? {`${challenge.completed}`} <br />
         </li>
       </div>
     )
