@@ -30,12 +30,14 @@
 
 import React, { Component } from 'react';
 import PowersContainer from './containers/PowersContainer';
+import Home from './components/Home';
 
 class App extends Component {
 
   render() {
     return (
       <div className="App">
+        <Home />
         <PowersContainer />
       </div>
     )
