@@ -30,19 +30,33 @@
 
 import React, { Component } from 'react';
 import PowersContainer from './containers/PowersContainer';
+// import PowerShow from './components/powers/PowerShow'
 import Home from './components/Home';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Home />
-        <PowersContainer />
-      </div>
+      <Router>
+            <div className="App">
+              <Switch>
+                <Route exact path="/" component={ Home } />
+                <Route exact path="/powers" component={PowersContainer} />  
+                {/* <Route exact path="/powers/:id" render={(props) => <PowerShow {...props} powers={this.state.powers} /> } /> */}
+              </Switch>
+            </div>
+      </Router>
+
     )
   }
 
 }
 
 export default App
+
+            // <Route exact path="/pets" component={PetList} />
+            // <Route exact path="/pets/:id" render={ props => <PetShow {...props} pets={ this.state.pets } />} />
+
+
+      
