@@ -27,6 +27,7 @@
 
 // export default App;
 
+import './App.css';
 import React, { Component } from 'react';
 import PowersContainer from './containers/PowersContainer';
 // import PowerShow from './components/powers/PowerShow';
@@ -51,7 +52,6 @@ class App extends Component {
               </Switch>
             </div>
       </Router>
-
     )
   }
 
