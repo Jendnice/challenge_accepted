@@ -6,7 +6,7 @@ import powerReducer from './reducers/powerReducer'
 import { Provider } from 'react-redux';
 import { createStore, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk'
-// import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './serviceWorker';
 
 
 
@@ -27,7 +27,7 @@ document.getElementById('root')
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 
-// serviceWorker.unregister();
+serviceWorker.unregister();
 
 
 

@@ -27,23 +27,27 @@
 
 // export default App;
 
-
 import React, { Component } from 'react';
 import PowersContainer from './containers/PowersContainer';
-// import PowerShow from './components/powers/PowerShow'
+// import PowerShow from './components/powers/PowerShow';
 import Home from './components/Home';
+import NotFound from './components/NotFound';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
 
   render() {
+
     return (
       <Router>
             <div className="App">
               <Switch>
                 <Route exact path="/" component={ Home } />
-                <Route exact path="/powers" component={PowersContainer} />  
-                {/* <Route exact path="/powers/:id" render={(props) => <PowerShow {...props} powers={this.state.powers} /> } /> */}
+                <Route exact path="/powers" component={PowersContainer} />
+                <Route path="*" component={NotFound} />
+
+              {/* <Route path="/powers/:id" render={(routeProps) => <PowerShow {...routeProps} powers={this.props.powers} /> } /> */}
+             
               </Switch>
             </div>
       </Router>
@@ -53,10 +57,8 @@ class App extends Component {
 
 }
 
-export default App
 
-            // <Route exact path="/pets" component={PetList} />
-            // <Route exact path="/pets/:id" render={ props => <PetShow {...props} pets={ this.state.pets } />} />
+export default App
 
 
       

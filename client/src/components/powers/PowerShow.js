@@ -2,14 +2,16 @@
 
 
 // class PowerShow extends Component {  
-//   constructor() {
-//     super();
+//   constructor(props) {
+//     super(props)
 
-//     let paramsId = this.props.match.params.id
-//     let power = this.powers.find( power => power.id === paramsId);
+//     debugger 
+
+//     let paramsId = parseInt(this.props.match.params.id, 10)
+//     let power = this.props.powers.find( power => power.id === paramsId);
 
 //     this.state = {
-//       power: power ? power : { name: 'N/A', description: 'N/A', info: 'N/A'}
+//       power: power ? power : { name: 'N/A', description: 'N/A', info: 'N/A', challenges: []}
 //     }
 //   }
 
