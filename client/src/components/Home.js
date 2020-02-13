@@ -3,7 +3,7 @@ import { Container} from 'semantic-ui-react'
 import './Home.css'
 // import { Button } from 'semantic-ui-react'
 
-export class Home extends Component {
+class Home extends Component {
 
   render() {
     return (
@@ -19,10 +19,10 @@ export class Home extends Component {
         <h3><i>what will you do with it?</i></h3>
 
         </Container>
- 
-        <button class="ui blue inverted animated button">
-        <div class="visible content">I'm ready</div>
-        <div class="hidden content"><i aria-hidden="true" class="arrow right icon"></i></div>
+        <br/>
+        <button className="ui blue inverted animated button" onClick={() =>  window.location.href='/powers'}>
+        <div className="visible content">I'm ready</div>
+        <div className="hidden content"><i aria-hidden="true" className="arrow right icon"></i></div>
         </button>
         </div>
       </div>
