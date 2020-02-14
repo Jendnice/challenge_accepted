@@ -13,9 +13,7 @@ class PowersContainer extends Component {
   render() {
     return (
       <Container>
-      <div>
         <Powers powers={this.props.powers} />
-      </div>
       </Container>
     )
   }
