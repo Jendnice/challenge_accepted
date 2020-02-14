@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Powers from '../components/powers/Powers'
 import { connect } from 'react-redux'
 import { fetchPowers } from '../actions/index'
-import { Container } from 'semantic-ui-react';
+import { Container } from 'semantic-ui-react'
 
 class PowersContainer extends Component {
 

@@ -1,7 +1,7 @@
 * {
     text-align: center;
     font-family: 'Rajdhani', sans-serif;
-    /* justify-content: auto; */
+    justify-content: auto;
 }
 
 .PowerCard {
@@ -22,21 +22,22 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* width: 140px; */
-    /* height: 140px; */
+    /* width: 140px;
+    height: 140px; */
   }
 
   .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: space-around;
-    
+    justify-content: space-evenly; 
   }
 
   .item2 {
-    grid-area: 1 / 2 / 5 ;
-    height: 500px;
-    padding: 200px;
+    grid-area: 1 / 2 / 3 ;
+    height: 600px;
+    /* height: auto; */
+    /* padding: 200px; */
   }
 
+  
   
