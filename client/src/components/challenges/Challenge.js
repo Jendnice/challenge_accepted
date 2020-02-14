@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+// import '../App.css'
+// import { Card } from 'semantic-ui-react'
 
 class Challenge extends Component {
 
@@ -6,6 +8,7 @@ class Challenge extends Component {
     const { challenge } = this.props
 
     return (
+      // <Card>
       <div>
         <li>
           {challenge.name} <br />
@@ -13,6 +16,7 @@ class Challenge extends Component {
           Completed? {`${challenge.completed}`} <br />
         </li>
       </div>
+      // </Card >
     )
   }
 

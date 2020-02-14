@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Powers from '../components/powers/Powers'
 import { connect } from 'react-redux'
 import { fetchPowers } from '../actions/index'
+import { Container } from 'semantic-ui-react';
 
 class PowersContainer extends Component {
 
@@ -11,9 +12,11 @@ class PowersContainer extends Component {
 
   render() {
     return (
+      <Container>
       <div>
         <Powers powers={this.props.powers} />
       </div>
+      </Container>
     )
   }
 }

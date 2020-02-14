@@ -1,0 +1,25 @@
+* {
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.PowerCard {
+    color: black
+}
+
+.header {
+    color: black;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    border-bottom: solid;
+    padding: 15px;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 140px; */
+    /* height: 140px; */
+  }
