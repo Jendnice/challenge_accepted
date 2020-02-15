@@ -8,7 +8,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <h1>Challenge Accepted!</h1>
+        {/* <h1>Challenge Accepted!</h1> */}
         <div>
         <Container className="container">
         <h3>The power is in your hands . . .</h3>

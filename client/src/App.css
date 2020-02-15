@@ -49,3 +49,11 @@
   color: #61dafb;
   padding: 50px
 }
+
+.divider {
+  background-color: #61dafb;
+}
+
+.MainHeader {
+  padding-bottom: 25px;
+}

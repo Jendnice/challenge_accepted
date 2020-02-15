@@ -33,7 +33,10 @@ import PowersContainer from './containers/PowersContainer';
 // import PowerShow from './components/powers/PowerShow';
 import Home from './components/Home';
 import NotFound from './components/NotFound';
+import Footer from './components/Footer';
+import Header from './components/Header'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Divider } from 'semantic-ui-react'
 
 class App extends Component {
 
@@ -42,6 +45,7 @@ class App extends Component {
     return (
       <Router>
             <div className="App">
+              <Header />
               <Switch>
                 <Route exact path="/" component={ Home } />
                 <Route exact path="/powers" component={PowersContainer} />
@@ -50,6 +54,9 @@ class App extends Component {
               {/* <Route path="/powers/:id" render={(routeProps) => <PowerShow {...routeProps} powers={this.props.powers} /> } /> */}
              
               </Switch>
+              <br /><br />
+              <Divider />
+              <Footer />
             </div>
       </Router>
     )

@@ -5,19 +5,10 @@ import './Home.css'
 
 
 class NotFound extends Component {
-  
-    // return (
-    //     <div>
-    //         <h1> Oh no! That page wasn't found. </h1><br/ >
-    //         <h3> Don't worry! You can always head home! </h3> <br />
-    //         <Link to='/'><h2>Home</h2></Link>
-    //    </div>
-    // )
 
     render() {
       return (
         <div>
-          <h1>Challenge Accepted!</h1>
           <div>
           <Container className="container">
   
