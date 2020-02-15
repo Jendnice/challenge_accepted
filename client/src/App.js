@@ -48,8 +48,9 @@ class App extends Component {
               <Header />
               <Switch>
                 <Route exact path="/" component={ Home } />
-                <Route exact path="/powers" component={PowersContainer} />
-                <Route path="*" component={NotFound} />
+                <Route exact path="/home" component={ Home } />
+                <Route exact path="/powers" component={ PowersContainer } />
+                <Route path="*" component={ NotFound } />
 
               {/* <Route path="/powers/:id" render={(routeProps) => <PowerShow {...routeProps} powers={this.props.powers} /> } /> */}
              
