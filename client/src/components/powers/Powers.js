@@ -19,7 +19,7 @@ class Powers extends Component {
   render() {
     return(
       // <ul>
-      <div class="grid-container">
+      <div className="grid-container">
         {this.renderPowers()}
       </div>
       // </ul>

@@ -13,8 +13,8 @@ class Home extends Component {
         <Container className="container">
         <h3>The power is in your hands . . .</h3>
 
-        <img src="https://cdn.shopify.com/s/files/1/1810/5253/articles/source.gif?v=1512068907"alt="animated rocket"></img>
-
+        {/* <img src="https://cdn.shopify.com/s/files/1/1810/5253/articles/source.gif?v=1512068907"alt="animated rocket"></img> */}
+        <img src='https://i.pinimg.com/originals/e3/47/20/e3472086f5e52efcffa84c781684d53b.gif' alt="earth spinning"></img>
 
         <h3><i>what will you do with it?</i></h3>
 

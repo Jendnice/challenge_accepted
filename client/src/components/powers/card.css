@@ -7,15 +7,26 @@
 .PowerCard {
     color: black;
     float: left;
+    /* font-size: 16px; */
 }
 
-.header {
+.card_header {
     color: black;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    border-bottom: solid;
-    padding: 15px;
+    /* border-bottom: solid; */
+    padding-top: 15px;
+}
+
+.card_description {
+  font-size: large;
+  border-top: solid;
+  border-bottom: solid;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .image {
@@ -29,7 +40,9 @@
   .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 30px;
+    /* Maybe try to adjust container margin or padding here? */
   }
 
   /* .item2 { */
@@ -44,6 +57,9 @@
     height: 200px;
     /* grid-area: 1 / 2 ; */
   }
+
+  
+
 
   
 

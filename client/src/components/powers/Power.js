@@ -34,6 +34,8 @@ class Power extends Component {
 
     if (this.props.power.name === "") {
      return (
+       <div>
+       <br/> <br/> <br/> <br/> <br/>
      <Card className={`item${this.props.power.name}`}>
       <div key={this.props.power.id} className="PowerCard">
         <Card.Content>
@@ -44,6 +46,7 @@ class Power extends Component {
         </Card.Content>
       </div>
       </Card>
+      </div>
      )
 
     } else 
@@ -51,14 +54,14 @@ class Power extends Component {
     return (
       <Card className={`item${this.props.power.name}`}>
       <div key={this.props.power.id} className="PowerCard">
-        <Card.Content>
+        <Card.Content >
               <Image
                 className="image"
                 src={this.assignPhoto()}
               />
-            <Card.Header> {this.props.power.name} </Card.Header><br />
-            <Card.Description>{this.props.power.description} <br />
-            {this.props.power.info} </Card.Description> <br /> 
+            <Card.Header className={'card_header'}> {this.props.power.name} </Card.Header><br />
+            <Card.Description className="card_description"><i>{this.props.power.description}</i> <br /><br />
+            {this.props.power.info} </Card.Description>
             <ChallengesContainer powerId={this.props.power.id}/>
         </Card.Content>
       </div>
