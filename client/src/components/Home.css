@@ -3,4 +3,67 @@
     padding: 30px;
 }
 
+.ele {
+    /* width: 60px; */
+    /* height: 60px; */
+    padding-right: 450px;
+    /* padding-bottom: 25px; */
+    /* text-align: left; */
+    animation: 10s fadeIn;
+    animation-fill-mode: forwards;
+    
+    visibility: hidden;
+  }
+  
+  /* .ele:hover { */
+    /* background-color: #123; */
+  /* } */
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 
+  .ele1 {
+    /* width: 60px; */
+    /* height: 60px; */
+    padding-right: 425px;
+    /* padding-bottom: 25px; */
+    /* text-align: left; */
+    animation: 10s fadeIn;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+    visibility: hidden;
+  }
+
+  .ele2 {
+    /* width: 60px; */
+    /* height: 60px; */
+    padding-left: 320px;
+    padding-bottom: 5px;
+    /* text-align: left; */
+    animation: 7.5s fadeIn;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    font-style: italic;
+    letter-spacing: 2.25px;
+    
+    visibility: hidden;
+  }
+
+  .worldGif {
+      margin-bottom: 50px;
+  }
+
+  .robotGif {
+      margin-bottom: 50px;
+  }
+  
+
+  
