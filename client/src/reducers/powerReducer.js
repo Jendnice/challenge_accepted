@@ -1,5 +1,7 @@
 
 const powerReducer = (state = { powers: [], challenges: [] }, action) => {
+
+    // debugger 
     
         switch (action.type) {
 
@@ -30,7 +32,16 @@ const powerReducer = (state = { powers: [], challenges: [] }, action) => {
                 return {
                     ...state,
                     challenges: action.payload
-                } 
+                }
+
+
+        //     case 'COMPLETE_TODO':
+   
+        // // const todoUpdate = state.find(todo => todo.id == action.payload)
+        // // todoUpdate.complete = true
+        // // return state
+        // const newState = state.map(todo => todo.id == action.payload ? { ...todo, complete: true } : todo )
+        // return newState
 
 
         // case 'ADD_POWER':
