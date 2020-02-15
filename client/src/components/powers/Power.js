@@ -1,24 +1,23 @@
 import React, { Component } from 'react';
 import ChallengesContainer from '../../containers/ChallengesContainer'
-import { Card, Image } from 'semantic-ui-react'
+import { Card, Image, Reveal } from 'semantic-ui-react'
 import './card.css'
 
 class Power extends Component {
 
   assignPhoto = () => {
     if (this.props.power.name === "Earth") {
-      // return 'https://images.unsplash.com/photo-1453791052107-5c843da62d97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
-      return 'https://media0.giphy.com/media/Ny6tc0CUS0CmQ/source.gif'
-    } else if 
-      (this.props.power.name === "Heart" ) {
       return 'https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
     } else if 
+      (this.props.power.name === "Heart" ) {
+      return 'https://media0.giphy.com/media/Ny6tc0CUS0CmQ/source.gif'
+    } else if 
       (this.props.power.name === "Wind" ) {
-      // return 'https://images.unsplash.com/photo-1496867557017-559adb93b339?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
       return 'https://media.giphy.com/media/3MbRNvfnMyUJeKGlsw/giphy.gif'
     } else if 
       (this.props.power.name === "Fire") {
-      return 'https://images.unsplash.com/photo-1497906539264-eb74442e37a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+      return 'https://images.unsplash.com/photo-1575329133220-8515b1336ab9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+      // return 'https://images.unsplash.com/photo-1497906539264-eb74442e37a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
     } else if 
       (this.props.power.name === "") {
       return 'https://media2.giphy.com/media/QEPlRzgYGwODC/giphy.gif'
@@ -28,9 +27,41 @@ class Power extends Component {
     }
   }
 
+  assignGif = () => {
+    if (this.props.power.name === "Earth") {
+      return 'https://media1.giphy.com/media/mm8TIKFMbGErS/giphy.gif'
+    } else if 
+      (this.props.power.name === "Heart" ) {
+      return 'https://media2.giphy.com/media/UDSEv9Y0y9fyM/giphy.gif'
+    } else if 
+      (this.props.power.name === "Wind" ) {
+      return 'https://media1.giphy.com/media/1tlgcpXPoj9JK/giphy.gif'
+    } else if 
+      (this.props.power.name === "Fire") {
+      return 'https://media3.giphy.com/media/CuSsVkCr9vFHW/source.gif'
+    } else if 
+      (this.props.power.name === "") {
+      return 'https://media.giphy.com/media/6KULP1HJan59S/giphy.gif'
+    } else if 
+      (this.props.power.name === "Water" ) {
+      return 'https://media3.giphy.com/media/drFw4AVBHeaoE/source.gif'
+    }
+  }
+
 
   render() {
     // const { power } = this.props
+
+    const photoAndGifReveal = () => (
+      <Reveal animated='small fade'>
+        <Reveal.Content visible>
+          <Image className="image" src={this.assignPhoto()} />
+        </Reveal.Content>
+        <Reveal.Content hidden>
+          <Image className='captainPlanetGif' src={this.assignGif()} />
+        </Reveal.Content>
+      </Reveal>
+    )
 
     if (this.props.power.name === "") {
      return (
@@ -39,10 +70,11 @@ class Power extends Component {
      <Card className={`item${this.props.power.name}`}>
       <div key={this.props.power.id} className="PowerCard">
         <Card.Content>
-              <Image
+              {photoAndGifReveal()}
+              {/* <Image
                 className="image"
                 src={this.assignPhoto()}
-              />
+              /> */}
         </Card.Content>
       </div>
       </Card>
@@ -55,10 +87,11 @@ class Power extends Component {
       <Card className={`item${this.props.power.name}`}>
       <div key={this.props.power.id} className="PowerCard">
         <Card.Content >
-              <Image
+              {photoAndGifReveal()}
+              {/* <Image
                 className="image"
                 src={this.assignPhoto()}
-              />
+              /> */}
             <Card.Header className={'card_header'}> {this.props.power.name} </Card.Header><br />
             <Card.Description className="card_description"><i>{this.props.power.description}</i> <br /><br />
             {this.props.power.info} </Card.Description>

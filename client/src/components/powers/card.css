@@ -33,8 +33,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* width: 250px;
-    height: 300px; */
+    width: 300px;
+    height: 280px;
   }
 
   .grid-container {
@@ -53,9 +53,20 @@
     /* padding: 200px; */
   /* } */
 
-  .item {
-    height: 200px;
+
+  /* .item {
+    height: 280px; */
     /* grid-area: 1 / 2 ; */
+  /* } */
+
+  /* .captainPlanetGif {
+    height: 280px;
+    width: 300px;
+  } */
+
+  .itemEarth {
+    /* height: 290px; */
+    grid-area: 1 / 2 ;
   }
 
   
