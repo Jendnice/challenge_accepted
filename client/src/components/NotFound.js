@@ -12,11 +12,11 @@ class NotFound extends Component {
           <div>
           <Container className="container">
 
-          <div className="ele">
+          <div className="intro1">
             <h2>That page wasn't found.</h2>
           </div>
 
-          <div className="ele2">
+          <div className="intro3">
             <h2>Head home below!</h2>
           </div>
 

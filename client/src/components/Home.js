@@ -10,15 +10,15 @@ class Home extends Component {
         <div>
         <Container className="container">
 
-          <div className="ele">
+          <div className="intro1">
             <h2>The power is in</h2>
           </div>
 
-          <div className="ele1">
+          <div className="intro2">
             <h2>your hands . . .</h2>
           </div>
 
-          <div className="ele2">
+          <div className="intro3">
             <h2>what will you do with it?</h2>
           </div>
 

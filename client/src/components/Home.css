@@ -3,7 +3,7 @@
     padding: 30px;
 }
 
-.ele {
+.intro1 {
     /* width: 60px; */
     /* height: 60px; */
     padding-right: 450px;
@@ -29,7 +29,7 @@
     }
   }
 
-  .ele1 {
+  .intro2 {
     /* width: 60px; */
     /* height: 60px; */
     padding-right: 425px;
@@ -42,7 +42,7 @@
     visibility: hidden;
   }
 
-  .ele2 {
+  .intro3 {
     /* width: 60px; */
     /* height: 60px; */
     padding-left: 320px;
