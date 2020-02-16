@@ -51,7 +51,6 @@
     animation: 7.5s fadeIn;
     animation-delay: 3s;
     animation-fill-mode: forwards;
-    font-style: italic;
     letter-spacing: 2.25px;
     
     visibility: hidden;
@@ -65,5 +64,8 @@
       margin-bottom: 50px;
   }
   
+  .h2 {
+      font-family: 'Shadows Into Light', cursive;
+  }
 
   

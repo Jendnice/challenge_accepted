@@ -47,7 +47,7 @@
   text-align: center;
   background-color: #282c34;
   color: #61dafb;
-  padding: 50px
+  padding: 50px;
 }
 
 .divider {
@@ -57,3 +57,8 @@
 .MainHeader {
   padding-bottom: 25px;
 }
+
+.HeaderContent {
+  font-family: 'Comfortaa', cursive;
+}
+
