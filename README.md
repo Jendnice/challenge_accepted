@@ -40,9 +40,9 @@ To start the frontend in a local server, from the _client_ directory, run:
 $ yarn start
 ```
 
-You should see the app's main page at ```localhost:3001```.
+You should see the app's home page at ```localhost:3001```.
 
-Finally - have fun!
+Have fun!
 
 ## Built With
 
