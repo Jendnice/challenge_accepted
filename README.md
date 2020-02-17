@@ -5,7 +5,7 @@
 ![React-project-powers-page27bacfb799cab5ed.png](https://www.pastepic.xyz/images/2020/02/16/React-project-powers-page27bacfb799cab5ed.png)
 
 
-_Challenge Accepted_ gives kids and pre-teens a fun and easy way to make a positive impact on the world. Through “powers” reminiscent of Captain Planet, and modern day “challenges”, kids can positively impact different facets of our environment, and those who inhabit it.
+_Challenge Accepted_ gives kids and young teens a fun and easy way to make a positive impact on the world. Through “powers” reminiscent of Captain Planet, and modern day “challenges”, kids can positively impact different facets of our environment, and those who inhabit it.
 
 ## Getting started
 
@@ -15,10 +15,11 @@ To get started with the app, fork and clone this repo. In the root directory of 
 $ bundle install
 ```
 
-Next, migrate the database:
+Next, migrate and seed the database:
 
 ```
 $ rake db:migrate
+$ rake db:seed
 ```
 
 Navigate to the _client_ folder and run:
@@ -27,7 +28,7 @@ Navigate to the _client_ folder and run:
 yarn install
 ```
 
-To start the backend in a local server, from the _root_ directory, run:
+To start the backend in a local server, from the root directory, run:
 
 ```
 $ rails server
@@ -57,7 +58,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/Jendni
 
 ## Additional Information
 
-This is a portfolio project for the React/Redux section of Flatiron School's Online Software Engineering program.
+This is a portfolio project for the React-Redux section of Flatiron School's Online Software Engineering program.
 For more information, see 
 [Building a client-side application with React-Redux](https://github.com/learn-co-students/react-redux-assessment-online-web-ft-090919).
 
