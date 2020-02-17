@@ -1,4 +1,3 @@
-
 export const fetchPowers = () => {
 
     return (dispatch) => {
@@ -23,4 +22,3 @@ export const fetchChallenges = () => {
       })
     }
 }
-

@@ -4,23 +4,15 @@
 }
 
 .intro1 {
-    /* width: 60px; */
-    /* height: 60px; */
     padding-right: 450px;
-    /* padding-bottom: 25px; */
-    /* text-align: left; */
     animation: 10s fadeIn;
     animation-delay: 1s;
     animation-fill-mode: forwards;
     
     visibility: hidden;
-  }
+}
   
-  /* .ele:hover { */
-    /* background-color: #123; */
-  /* } */
-  
-  @keyframes fadeIn {
+@keyframes fadeIn {
     0% {
       opacity: 0;
     }
@@ -28,61 +20,48 @@
       visibility: visible;
       opacity: 1;
     }
-  }
+}
 
-  .intro2 {
-    /* width: 60px; */
-    /* height: 60px; */
+.intro2 {
     padding-right: 425px;
-    /* padding-bottom: 25px; */
-    /* text-align: left; */
     animation: 10s fadeIn;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    
     visibility: hidden;
-  }
+}
 
-  .intro3 {
-    /* width: 60px; */
-    /* height: 60px; */
+.intro3 {
     padding-left: 320px;
     padding-bottom: 5px;
-    /* text-align: left; */
     animation: 7.5s fadeIn;
     animation-delay: 4s;
     animation-fill-mode: forwards;
     letter-spacing: 2.25px;
-    
     visibility: hidden;
-  }
+}
 
-  .worldGif {
+.worldGif {
       margin-bottom: 50px;
-  }
+}
 
-  .robotGif {
+.robotGif {
       margin-bottom: 50px;
-  }
+}
   
-  /* .h2 {
-      font-family: 'Shadows Into Light', cursive;
-  } */
-
-  .links {
+.links {
     font-size: large;
     text-align: left;
     padding-left: 150px;
-  }
+}
 
-  .informationHeader {
+.informationHeader {
     text-align: left;
     padding-left: 100px;
-  }
+}
 
-  .happyEarth {
+.happyEarth {
     height: 300px;
     width: 370px;
     padding-top: 15px;
-  }
+}
   

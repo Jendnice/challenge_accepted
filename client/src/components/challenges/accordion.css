@@ -5,7 +5,6 @@
 }
 
 .accordion {
-    /* background-color: black; */
     padding-right: 50px;
     justify-content: auto;
 }
@@ -19,10 +18,7 @@
 
 .ui.info.message {
     color: white;
-    /* background-color: #202024; */
     background-color: #1c1c20;
-    /* background-color: #282c34; */
-    /* padding: 15px; */
     padding-bottom: 25px;
 }
 
@@ -30,6 +26,4 @@
     margin-left: 15px;
     margin-bottom: 10px;
 }
-
-
 

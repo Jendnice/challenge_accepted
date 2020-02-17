@@ -3,7 +3,6 @@ import { Container} from 'semantic-ui-react'
 import './Home.css'
 
 
-
 class NotFound extends Component {
 
     render() {

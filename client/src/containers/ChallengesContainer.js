@@ -7,13 +7,10 @@ import { fetchChallenges } from '../actions/index'
 class ChallengesContainer extends Component {
 
   componentDidMount() {
-    // console.log(this.props)
     this.props.fetchChallenges()
   }
 
   render() {
-    // debugger 
-
     return (
       <div>
         <Challenges 

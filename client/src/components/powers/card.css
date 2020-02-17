@@ -7,7 +7,6 @@
 .PowerCard {
     color: black;
     float: left;
-    /* font-size: 16px; */
 }
 
 .card_header {
@@ -15,7 +14,6 @@
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    /* border-bottom: solid; */
     padding-top: 15px;
 }
 
@@ -35,39 +33,18 @@
     margin-right: auto;
     width: 300px;
     height: 280px;
-  }
+}
 
-  .grid-container {
+.grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-between;
     padding: 30px;
-    /* Maybe try to adjust container margin or padding here? */
-  }
+}
 
-  /* .item2 { */
-    /* grid-area: 1 / 2 / 3 ;
-    height: 600px; */
-
-    /* height: auto; */
-    /* padding: 200px; */
-  /* } */
-
-
-  /* .item {
-    height: 280px; */
-    /* grid-area: 1 / 2 ; */
-  /* } */
-
-  /* .captainPlanetGif {
-    height: 280px;
-    width: 300px;
-  } */
-
-  .itemEarth {
-    /* height: 290px; */
+.itemEarth {
     grid-area: 1 / 2 ;
-  }
+}
 
   
 

@@ -17,7 +17,6 @@ class Power extends Component {
     } else if 
       (this.props.power.name === "Fire") {
       return 'https://images.unsplash.com/photo-1575329133220-8515b1336ab9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
-      // return 'https://images.unsplash.com/photo-1497906539264-eb74442e37a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
     } else if 
       (this.props.power.name === "") {
       return 'https://media2.giphy.com/media/QEPlRzgYGwODC/giphy.gif'
@@ -71,10 +70,6 @@ class Power extends Component {
       <div key={this.props.power.id} className="PowerCard">
         <Card.Content>
               {photoAndGifReveal()}
-              {/* <Image
-                className="image"
-                src={this.assignPhoto()}
-              /> */}
         </Card.Content>
       </div>
       </Card>
@@ -88,10 +83,6 @@ class Power extends Component {
       <div key={this.props.power.id} className="PowerCard">
         <Card.Content >
               {photoAndGifReveal()}
-              {/* <Image
-                className="image"
-                src={this.assignPhoto()}
-              /> */}
             <Card.Header className={'card_header'}> {this.props.power.name} </Card.Header><br />
             <Card.Description className="card_description"><i>{this.props.power.description}</i> <br /><br />
             {this.props.power.info} </Card.Description>
@@ -104,5 +95,3 @@ class Power extends Component {
 }
 
 export default Power
-
-
