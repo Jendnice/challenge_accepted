@@ -27,7 +27,10 @@ class Resources extends Component {
                 <a href={'https://climatekids.nasa.gov/ocean/'}>ClimateKids - NASA (ocean)</a><br />
                 <a href={'https://smokeybear.com/en/smokey-for-kids/preventing-wildfires'}>Smokey Bear</a><br />
                 <a href={'https://www.greenmatters.com/p/how-plastic-straws-affect-ocean-turtles'}>Green Matters</a><br />
-                <a href={'https://www.chasingcoral.com/2018/05/23/reef-safe-sunscreen-need-know/'}>Chasing Coral</a><br /><br />
+                <a href={'https://www.chasingcoral.com/2018/05/23/reef-safe-sunscreen-need-know/'}>Chasing Coral</a><br />
+                <a href={'https://captainplanetfoundation.org/'}>Captain Planet Foundation</a><br />
+                <a href={'https://www.imdb.com/title/tt0098763/'}>Captain Planet and the Planeteers - IMDb</a><br /><br />
+
                 <br />
                 <a href={'https://gifts.worldwildlife.org/gift-center/gifts/Species-Adoptions.aspx'}>WWF - Species Adoptions</a><br />
                 <a href={'https://www.amazon.com/Boy-Who-Harnessed-Wind-Electricity/dp/0061730335'}><i>The Boy Who Harnessed the Wind</i> (Amazon)</a><br />
