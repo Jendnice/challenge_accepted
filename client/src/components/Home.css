@@ -10,6 +10,7 @@
     /* padding-bottom: 25px; */
     /* text-align: left; */
     animation: 10s fadeIn;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
     
     visibility: hidden;
@@ -36,7 +37,7 @@
     /* padding-bottom: 25px; */
     /* text-align: left; */
     animation: 10s fadeIn;
-    animation-delay: 1s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
     
     visibility: hidden;
@@ -49,7 +50,7 @@
     padding-bottom: 5px;
     /* text-align: left; */
     animation: 7.5s fadeIn;
-    animation-delay: 3s;
+    animation-delay: 4s;
     animation-fill-mode: forwards;
     letter-spacing: 2.25px;
     
@@ -68,4 +69,20 @@
       font-family: 'Shadows Into Light', cursive;
   } */
 
+  .links {
+    font-size: large;
+    text-align: left;
+    padding-left: 150px;
+  }
+
+  .informationHeader {
+    text-align: left;
+    padding-left: 100px;
+  }
+
+  .happyEarth {
+    height: 300px;
+    width: 370px;
+    padding-top: 15px;
+  }
   
