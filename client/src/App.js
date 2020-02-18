@@ -9,6 +9,7 @@ import Header from './components/Header'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Divider } from 'semantic-ui-react'
 
+
 class App extends Component {
 
   render() {
@@ -17,14 +18,14 @@ class App extends Component {
       <Router>
             <div className="App">
               <Header />
-              <Switch>
-                <Route exact path="/" component={ Home } />
-                <Route exact path="/home" component={ Home } />
-                <Route exact path="/powers" component={ PowersContainer } />
-                <Route exact path="/resources" component={Resources} />
-                <Route path="*" component={ NotFound } />
-              </Switch>
-              <br /><br />
+                <Switch>
+                  <Route exact path="/" component={ Home } />
+                  <Route exact path="/home" component={ Home } />
+                  <Route exact path="/powers" component={ PowersContainer } />
+                  <Route exact path="/resources" component={Resources} />
+                  <Route path="*" component={ NotFound } />
+                </Switch>
+                <br /><br />
               <Divider />
               <Footer />
             </div>

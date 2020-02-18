@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { fetchPowers } from '../actions/index'
 import { Container } from 'semantic-ui-react'
 
+
 class PowersContainer extends Component {
 
   componentDidMount() {
@@ -13,17 +14,18 @@ class PowersContainer extends Component {
   render() {
     return (
       <div>
-      <Container>
-        <Powers powers={this.props.powers} />
-      </Container>
-      <br />
-      <button className="ui blue inverted animated button" onClick={() =>  window.location.href='/'}>
-      <div className="visible content">Home</div>
-      <div className="hidden content"><i aria-hidden="true" className="arrow right icon"></i></div>
-      </button>
+        <Container>
+          <Powers powers={this.props.powers} />
+        </Container>
+        <br />
+        <button className="ui blue inverted animated button" onClick={() =>  window.location.href='/'}>
+          <div className="visible content">Home</div>
+          <div className="hidden content"><i aria-hidden="true" className="arrow right icon"></i></div>
+        </button>
       </div>
     )
   }
+
 }
 
 const mapStateToProps = (state) => {
@@ -37,5 +39,6 @@ const mapDispatchToProps = (dispatch) => {
     fetchPowers: () => dispatch(fetchPowers())
   }
 }
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(PowersContainer)

@@ -13,13 +13,14 @@ class ChallengesContainer extends Component {
   render() {
     return (
       <div>
-        <Challenges 
-        challenges={this.props.challenges}
-        powerId={this.props.powerId}
-        />
+          <Challenges 
+            challenges={this.props.challenges}
+            powerId={this.props.powerId}
+          />
       </div>
     )
   }
+
 }
 
 const mapStateToProps = (state) => {
@@ -33,5 +34,6 @@ const mapDispatchToProps = (dispatch) => {
     fetchChallenges: () => dispatch(fetchChallenges())
   }
 }
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(ChallengesContainer)
