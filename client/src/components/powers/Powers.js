@@ -8,22 +8,23 @@ class Powers extends Component {
   renderPowers = () => { 
     return this.props.powers.map(power => {
       return (
-      <Power
-        key={power.id}
-        power={power}
-      />
+        <Power
+          key={power.id}
+          power={power}
+        />
       )
     })
   }
 
   render() {
-    return(
+    return (
       <div className="grid-container">
         {this.renderPowers()}
       </div>
     )
   }
+
 }
 
-export default Powers
 
+export default Powers

@@ -8,7 +8,6 @@
     animation: 10s fadeIn;
     animation-delay: 1s;
     animation-fill-mode: forwards;
-    
     visibility: hidden;
 }
   
@@ -41,11 +40,11 @@
 }
 
 .worldGif {
-      margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .robotGif {
-      margin-bottom: 50px;
+    margin-bottom: 50px;
 }
   
 .links {

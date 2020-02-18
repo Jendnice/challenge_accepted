@@ -3,6 +3,7 @@ import ChallengesContainer from '../../containers/ChallengesContainer'
 import { Card, Image, Reveal } from 'semantic-ui-react'
 import './card.css'
 
+
 class Power extends Component {
 
   assignPhoto = () => {
@@ -63,35 +64,39 @@ class Power extends Component {
     )
 
     if (power.name === "") {
-     return (
-       <div>
-       <br/> <br/> <br/> <br/> <br/>
-     <Card className={`item${power.name}`}>
-      <div key={power.id} className="PowerCard">
-        <Card.Content>
+      return (
+        <div>
+        <br/> <br/> <br/> <br/> <br/>
+        <Card className={`item${power.name}`}>
+          <div key={power.id} className="PowerCard">
+            <Card.Content>
               {photoAndGifReveal()}
-        </Card.Content>
-      </div>
-      </Card>
-      </div>
-     )
+            </Card.Content>
+          </div>
+        </Card>
+        </div>
+      )
 
     } else 
 
-    return (
-      <Card className={`item${power.name}`}>
-      <div key={power.id} className="PowerCard">
-        <Card.Content >
+      return (
+        <Card className={`item${power.name}`}>
+          <div key={power.id} className="PowerCard">
+            <Card.Content >
               {photoAndGifReveal()}
-            <Card.Header className={'card_header'}> {power.name} </Card.Header><br />
-            <Card.Description className="card_description"><i>{power.description}</i> <br /><br />
-            {power.info} </Card.Description>
-            <ChallengesContainer powerId={power.id}/>
-        </Card.Content>
-      </div>
-      </Card>
-    )
+              <Card.Header className={'card_header'}> {power.name} </Card.Header><br />
+              <Card.Description className="card_description">
+                <i>{power.description}</i> <br /><br />
+                {power.info} 
+              </Card.Description>
+              <ChallengesContainer powerId={power.id}/>
+            </Card.Content>
+          </div>
+        </Card>
+      )
   }
+
 }
+
 
 export default Power
