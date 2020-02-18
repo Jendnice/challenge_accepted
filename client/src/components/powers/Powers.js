@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Power from './Power'
 import './card.css'
 
@@ -26,3 +26,4 @@ class Powers extends Component {
 }
 
 export default Powers
+
