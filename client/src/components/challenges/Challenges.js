@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Challenge from './Challenge';
 
+
 class Challenges extends Component {
 
     render() {
@@ -8,12 +9,14 @@ class Challenges extends Component {
             return <Challenge key={challenge.id} challenge={challenge} />
         })
 
-        return(
+        return (
             <ul>
             {challengeList}
             </ul>
         )   
     }
+
 }
+
 
 export default Challenges

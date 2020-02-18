@@ -9,7 +9,6 @@ class Challenge extends Component {
   render() {
     const { challenge } = this.props
 
-
     const panels = _.times(1, (i) => ({
       key: `panel-${i}`,
       title: {
@@ -31,12 +30,11 @@ class Challenge extends Component {
     )
 
     return (
-
       <div>
         {buildAccordion()}
       </div>
-
     )
+
   }
 
 }
