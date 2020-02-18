@@ -1,14 +1,11 @@
 import React from 'react'
 
 
-const Header = () => {
+const Header = () => 
 
-  return(
     <div className="MainHeader">
      <h1 style={{textAlign: 'center'}} className="HeaderContent">— Challenge Accepted —</h1>
-     </div>
-  )
+    </div>
 
-}
 
 export default Header

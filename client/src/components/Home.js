@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
-import { Container} from 'semantic-ui-react'
+import React from 'react'
+import { Container } from 'semantic-ui-react'
 import './Home.css'
 
-class Home extends Component {
 
-  render() {
-    return (
+const Home = () =>
+
       <div>
         <div>
         <Container className="container">
@@ -32,12 +31,6 @@ class Home extends Component {
           </button>
         </div>
       </div>
-    )
-  }
-
-}
 
 export default Home
-
-
 

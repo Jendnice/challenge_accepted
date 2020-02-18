@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Container} from 'semantic-ui-react'
 import './Home.css'
 
-class Resources extends Component {
 
-  render() {
-    return (
+const Resources = () => 
+
       <div>
         <div>
         <Container className="container">
@@ -48,9 +47,6 @@ class Resources extends Component {
           </button>
         </div>
       </div>
-    )
-  }
 
-}
 
 export default Resources

@@ -1,10 +1,8 @@
 import React from 'react'
 
 
-const Footer = () => {
+const Footer = () => 
 
-  return(
-    <>
       <div className="Footer">
         <p style={{textAlign: 'left'}} className="FooterContent"><i>Challenge Accepted </i> © Copyright 2020</p>
 
@@ -13,9 +11,6 @@ const Footer = () => {
         <div className="hidden content"><i aria-hidden="true" className="check icon"></i></div>
       </button>
       </div> 
-    </>
-  )
 
-}
 
 export default Footer

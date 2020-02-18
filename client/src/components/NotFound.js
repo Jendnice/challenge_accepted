@@ -1,12 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Container} from 'semantic-ui-react'
 import './Home.css'
 
 
-class NotFound extends Component {
+const NotFound = () => 
 
-    render() {
-      return (
         <div>
           <div>
           <Container className="container">
@@ -29,11 +27,6 @@ class NotFound extends Component {
             </button>
           </div>
         </div>
-      )
-    }
 
-}
 
 export default NotFound
-
-
