@@ -1,12 +1,12 @@
-import './App.css';
-import React, { Component } from 'react';
-import PowersContainer from './containers/PowersContainer';
-import Home from './components/Home';
-import NotFound from './components/NotFound';
-import Resources from './components/Resources';
-import Footer from './components/Footer';
+import './App.css'
+import React, { Component } from 'react'
+import PowersContainer from './containers/PowersContainer'
+import Home from './components/Home'
+import NotFound from './components/NotFound'
+import Resources from './components/Resources'
+import Footer from './components/Footer'
 import Header from './components/Header'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Divider } from 'semantic-ui-react'
 
 

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Challenge from './Challenge';
+import React, { Component } from 'react'
+import Challenge from './Challenge'
 
 
 class Challenges extends Component {
