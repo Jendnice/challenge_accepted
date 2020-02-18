@@ -49,7 +49,7 @@ class Power extends Component {
 
 
   render() {
-    // const { power } = this.props
+    const { power } = this.props
 
     const photoAndGifReveal = () => (
       <Reveal animated='small fade'>
@@ -62,12 +62,12 @@ class Power extends Component {
       </Reveal>
     )
 
-    if (this.props.power.name === "") {
+    if (power.name === "") {
      return (
        <div>
        <br/> <br/> <br/> <br/> <br/>
-     <Card className={`item${this.props.power.name}`}>
-      <div key={this.props.power.id} className="PowerCard">
+     <Card className={`item${power.name}`}>
+      <div key={power.id} className="PowerCard">
         <Card.Content>
               {photoAndGifReveal()}
         </Card.Content>
@@ -79,14 +79,14 @@ class Power extends Component {
     } else 
 
     return (
-      <Card className={`item${this.props.power.name}`}>
-      <div key={this.props.power.id} className="PowerCard">
+      <Card className={`item${power.name}`}>
+      <div key={power.id} className="PowerCard">
         <Card.Content >
               {photoAndGifReveal()}
-            <Card.Header className={'card_header'}> {this.props.power.name} </Card.Header><br />
-            <Card.Description className="card_description"><i>{this.props.power.description}</i> <br /><br />
-            {this.props.power.info} </Card.Description>
-            <ChallengesContainer powerId={this.props.power.id}/>
+            <Card.Header className={'card_header'}> {power.name} </Card.Header><br />
+            <Card.Description className="card_description"><i>{power.description}</i> <br /><br />
+            {power.info} </Card.Description>
+            <ChallengesContainer powerId={power.id}/>
         </Card.Content>
       </div>
       </Card>
