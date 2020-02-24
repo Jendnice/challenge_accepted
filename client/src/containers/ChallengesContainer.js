@@ -6,6 +6,7 @@ import { fetchChallenges } from '../actions/index'
 
 class ChallengesContainer extends Component {
 
+
   componentDidMount() {
     this.props.fetchChallenges()
   }

@@ -6,6 +6,18 @@ import './card.css'
 
 class Power extends Component {
 
+  state = {
+    likes: 0
+  }
+
+  updateLikes = () => {
+    let currentState = this.state.likes
+
+    this.setState({
+        likes: currentState + 1
+    })
+  }
+
   assignPhoto = () => {
     if (this.props.power.name === "Earth") {
       return 'https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
@@ -86,6 +98,8 @@ class Power extends Component {
               {photoAndGifReveal()}
               <Card.Header className={'card_header'}> {power.name} </Card.Header><br />
               <Card.Description className="card_description">
+            
+                <button onClick={this.updateLikes}> Likes: {this.state.likes} </button><br />
                 <i>{power.description}</i> <br /><br />
                 {power.info} 
               </Card.Description>
