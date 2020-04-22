@@ -14,7 +14,7 @@ class Power extends Component {
     let currentState = this.state.likes
 
     this.setState({
-        likes: currentState + 1
+      likes: currentState + 1
     })
   }
 
@@ -98,22 +98,12 @@ class Power extends Component {
               {photoAndGifReveal()}
               <Card.Header className={'card_header'}> {power.name} </Card.Header><br />
               <Card.Description className="card_description">
-            
-                {/* <button onClick={this.updateLikes}> Likes: {this.state.likes} </button><br /> */}
                 <i>{power.description}</i> <br /><br />
                 {power.info} <br /><br />
-                {/* <button className={'likes_button'} onClick={this.updateLikes}> Likes: {this.state.likes} </button><br /> */}
-                <button className="ui blue inverted animated button" onClick={this.updateLikes}>
-                <div className="visible content"><i aria-hidden="false" className="heart icon"></i></div>
-                <div className="hidden content">{this.state.likes}</div>
-                </button><br />
-
-                {/* <button className="ui blue inverted animated button" onClick={() =>  window.location.href='/resources'}> */}
-                {/* <div className="visible content">Resources</div> */}
-                {/* <div className="hidden content"><i aria-hidden="true" className="check icon"></i></div> */}
-                {/* </button> */}
-
-
+                  <button className="ui blue inverted animated button" onClick={this.updateLikes}>
+                    <div className="visible content"><i aria-hidden="false" className="heart icon"></i></div>
+                    <div className="hidden content">{this.state.likes}</div>
+                  </button><br />
               </Card.Description>
               <ChallengesContainer powerId={power.id}/>
             </Card.Content>

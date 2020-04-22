@@ -46,15 +46,7 @@
     grid-area: 1 / 2 ;
 }
 
-/* .likes_button {
-    background-color: black; 
-} */
-
 .card_description .ui.blue.inverted.animated.button {
     background-color: #1c1c20;
     font-size: small;
 }
-
-/* .ui.blue.inverted.animated.button .visible.content{
-    font-size: xx-large;
-} */
