@@ -103,9 +103,9 @@ class Power extends Component {
                 <i>{power.description}</i> <br /><br />
                 {power.info} <br /><br />
                 {/* <button className={'likes_button'} onClick={this.updateLikes}> Likes: {this.state.likes} </button><br /> */}
-                <button className="ui blue inverted animated button" onClick={() => this.updateLikes}>
-                <div className="visible content">Likes: {this.state.likes}</div>
-                <div className="hidden content"><i aria-hidden="true" className="heart icon"></i></div>
+                <button className="ui blue inverted animated button" onClick={this.updateLikes}>
+                <div className="visible content"><i aria-hidden="false" className="heart icon"></i></div>
+                <div className="hidden content">{this.state.likes}</div>
                 </button><br />
 
                 {/* <button className="ui blue inverted animated button" onClick={() =>  window.location.href='/resources'}> */}
