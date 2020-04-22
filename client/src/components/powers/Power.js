@@ -102,7 +102,8 @@ class Power extends Component {
                 {/* <button onClick={this.updateLikes}> Likes: {this.state.likes} </button><br /> */}
                 <i>{power.description}</i> <br /><br />
                 {power.info} <br /><br />
-                <button className={'likes_button'} onClick={this.updateLikes}> Likes: {this.state.likes} </button><br />
+                {/* <button className={'likes_button'} onClick={this.updateLikes}> Likes: {this.state.likes} </button><br /> */}
+                <button className="ui blue inverted animated button" onClick={this.updateLikes}> Likes: {this.state.likes} </button><br />
               </Card.Description>
               <ChallengesContainer powerId={power.id}/>
             </Card.Content>
