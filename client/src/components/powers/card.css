@@ -45,3 +45,7 @@
 .itemEarth {
     grid-area: 1 / 2 ;
 }
+
+.likes_button {
+    background-color: black; 
+}

@@ -99,9 +99,10 @@ class Power extends Component {
               <Card.Header className={'card_header'}> {power.name} </Card.Header><br />
               <Card.Description className="card_description">
             
-                <button onClick={this.updateLikes}> Likes: {this.state.likes} </button><br />
+                {/* <button onClick={this.updateLikes}> Likes: {this.state.likes} </button><br /> */}
                 <i>{power.description}</i> <br /><br />
-                {power.info} 
+                {power.info} <br /><br />
+                <button className={'likes_button'} onClick={this.updateLikes}> Likes: {this.state.likes} </button><br />
               </Card.Description>
               <ChallengesContainer powerId={power.id}/>
             </Card.Content>
