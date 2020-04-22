@@ -51,10 +51,8 @@
 } */
 
 .card_description .ui.blue.inverted.animated.button {
-    background-color: black;
-    /* height: 25px; */
+    background-color: #1c1c20;
     font-size: small;
-    /* text-align: left; */
 }
 
 /* .ui.blue.inverted.animated.button .visible.content{
