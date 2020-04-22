@@ -103,7 +103,17 @@ class Power extends Component {
                 <i>{power.description}</i> <br /><br />
                 {power.info} <br /><br />
                 {/* <button className={'likes_button'} onClick={this.updateLikes}> Likes: {this.state.likes} </button><br /> */}
-                <button className="ui blue inverted animated button" onClick={this.updateLikes}> Likes: {this.state.likes} </button><br />
+                <button className="ui blue inverted animated button" onClick={() => this.updateLikes}>
+                <div className="visible content">Likes: {this.state.likes}</div>
+                <div className="hidden content"><i aria-hidden="true" className="heart icon"></i></div>
+                </button><br />
+
+                {/* <button className="ui blue inverted animated button" onClick={() =>  window.location.href='/resources'}> */}
+                {/* <div className="visible content">Resources</div> */}
+                {/* <div className="hidden content"><i aria-hidden="true" className="check icon"></i></div> */}
+                {/* </button> */}
+
+
               </Card.Description>
               <ChallengesContainer powerId={power.id}/>
             </Card.Content>

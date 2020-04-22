@@ -50,12 +50,12 @@
     background-color: black; 
 } */
 
-/* .ui.blue.inverted.animated.button {
+.card_description .ui.blue.inverted.animated.button {
     background-color: black;
-    height: 25px;
+    /* height: 25px; */
     font-size: small;
-    text-align: justify;
-} */
+    /* text-align: left; */
+}
 
 /* .ui.blue.inverted.animated.button .visible.content{
     font-size: xx-large;
