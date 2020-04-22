@@ -50,15 +50,13 @@
     background-color: black; 
 } */
 
-.ui.blue.inverted.animated.button {
+/* .ui.blue.inverted.animated.button {
     background-color: black;
     height: 25px;
-    /* width: 80px; */
-    /* padding-left: 7px; */
-    /* padding-bottom: 20px; */
     font-size: small;
-}
+    text-align: justify;
+} */
 
-/* .Footer .ui.blue.inverted.animated.button .visible.content{
-    font-size: small;
+/* .ui.blue.inverted.animated.button .visible.content{
+    font-size: xx-large;
 } */
